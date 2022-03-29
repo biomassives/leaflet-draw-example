@@ -1,0 +1,6 @@
+<button (click)="onSave()">Save</button>
+
+<div leaflet style="height: 100vh;" leafletDraw [leafletOptions]="options" [leafletDrawOptions]="drawOptions"
+    (leafletMapReady)="onMapReady($event)" (leafletDrawCreated)="onDrawCreated($event)"
+    (leafletDrawDeleted)="onDrawDeleted($event)">
+</div>
